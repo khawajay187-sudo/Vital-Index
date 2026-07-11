@@ -94,7 +94,7 @@ vital-index/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 ```bash
@@ -116,13 +116,13 @@ The app will be available at `http://localhost:8501`.
 
 ---
 
-## 🌐 Live Demo
+##  Live Demo
 
 Try the app live here 👉 **[Vital Index](https://vital-index-healthchecker.streamlit.app/)**
 
 ---
 
-## 📈 Model Details
+##  Model Details
 
 - **Algorithm:** Random Forest
 - **Training Data:** Large-scale lifestyle and demographic dataset
@@ -131,13 +131,13 @@ Try the app live here 👉 **[Vital Index](https://vital-index-healthchecker.str
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](../../issues) or submit a pull request.
 
 ---
 
-## 👤 Author
+##  Author
 
 Developed by **Yasir Ali** with ❤️ using Python and Streamlit.
 
