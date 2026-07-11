@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import joblib
 import plotly.graph_objects as go
+import os
 
 # -----------------------------
 # PAGE CONFIG
@@ -368,11 +369,14 @@ h1, h2, h3, .hero-title {
 # -----------------------------
 # LOAD MODEL ARTIFACTS
 # -----------------------------
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 @st.cache_resource
 def load_artifacts():
-    model = joblib.load(r'C:\AC Office Chakwal\Python\obesitychecker project\dataset\obesity_rf_model.pkl')
-    scaler = joblib.load(r'C:\AC Office Chakwal\Python\obesitychecker project\dataset\scaler.pkl')
-    mappings = joblib.load(r'C:\AC Office Chakwal\Python\obesitychecker project\dataset\encoding_mappings.pkl')
+    model = joblib.load(os.path.join(BASE_DIR, 'dataset', 'obesity_rf_model.pkl'))
+    scaler = joblib.load(os.path.join(BASE_DIR, 'dataset', 'scaler.pkl'))
+    mappings = joblib.load(os.path.join(BASE_DIR, 'dataset', 'encoding_mappings.pkl'))
     return model, scaler, mappings
 
 model, scaler, mappings = load_artifacts()
